@@ -1,0 +1,36 @@
+:root{
+	--bg: linear-gradient(180deg,#071025 0%,#081226 100%);
+	--card-front: linear-gradient(180deg,#07233a,#052235);
+	--card-back: linear-gradient(180deg,#062b2b,#05343b);
+	--accent:#7dd3fc;
+	--muted:#94a3b8;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:#e6eef8}
+header{padding:20px;text-align:center}
+main{display:flex;flex-direction:column;align-items:center;gap:18px;padding:10px}
+.controls{display:flex;gap:8px;align-items:center}
+input[type="file"]{color:var(--muted)}
+.card-wrap{perspective:1200px;width:min(880px,92vw);height:360px;display:flex;align-items:center;justify-content:center}
+.card{width:640px;height:320px;position:relative;transform-style:preserve-3d;transition:transform .6s;cursor:pointer}
+.card.is-flipped{transform:rotateY(180deg)}
+.card-face{position:absolute;inset:0;border-radius:12px;padding:28px;backface-visibility:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.card-front{background:var(--card-front);box-shadow:0 10px 25px rgba(2,6,23,.7);font-size:34px;font-weight:600}
+.card-back{background:var(--card-back);transform:rotateY(180deg);font-size:18px;padding:26px;overflow:auto}
+.associations{width:min(880px,92vw);color:var(--muted)}
+.associations h2{margin:0 0 8px 0}
+#associationsList{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+#associationsList li{background:rgba(255,255,255,.06);padding:8px 12px;border-radius:999px}
+button{background:transparent;border:1px solid rgba(125,211,252,.16);color:var(--accent);padding:8px 12px;border-radius:8px}
+footer{padding:16px;text-align:center;color:var(--muted)}
+
+.palette{width:min(880px,92vw);color:var(--muted);display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.palette-controls{display:flex;gap:8px;align-items:center}
+.palette-swatches{display:flex;gap:8px;flex-wrap:wrap}
+.palette-swatches .swatch{width:56px;height:40px;border-radius:8px;border:2px solid rgba(255,255,255,0.06);cursor:pointer;box-shadow:0 4px 10px rgba(2,6,23,.4)}
+.palette-swatches .swatch.gradient{width:120px}
+
+/* admin/upload UI removed */
+/* file input styles removed - no upload available */
+
+@media (max-width:700px){.card{width:92vw;height:260px}.card-front{font-size:24px}.card-back{font-size:15px}}
