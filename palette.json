@@ -1,0 +1,14 @@
+{
+  "swatches": [
+    "#2F2960",
+    "#EF7C31",
+    "#FFFFFF",
+    "#A25CCC",
+    "#F357F6",
+    "#50A9D3",
+    "#F4D23B",
+    "linear-gradient(90deg,#682047,#D03044,#EF7C31,#F4D23B)",
+    "linear-gradient(90deg,#3C247C,#8C33C1,#F357F6)",
+    "linear-gradient(90deg,#367C9E,#50A9D3,#2A4D14,#F4D23B)"
+  ]
+}

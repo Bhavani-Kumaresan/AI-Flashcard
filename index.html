@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Concepts Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>AI Concepts Flashcards</h1>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+      <span id="progress"></span>
+    </div>
+
+    <div class="card-wrap">
+      <div id="card" class="card">
+        <div class="card-face card-front" id="cardFront"></div>
+        <div class="card-face card-back" id="cardBack"></div>
+      </div>
+    </div>
+   
+
+    
+    <section class="palette">
+      <h2>Palette</h2>
+      <div class="palette-controls">
+        <label for="paletteTarget">Apply to:</label>
+        <select id="paletteTarget">
+          <option value="card">Card</option>
+          <option value="body">Background</option>
+        </select>
+      </div>
+      <div id="palette" class="palette-swatches"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>HTC Global Technical Team</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

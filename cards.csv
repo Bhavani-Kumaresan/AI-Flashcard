@@ -1,0 +1,10 @@
+Term ,Definition
+What is a subagent in GitHub Copilot?,An AI helper tool that runs in isolation from the main Copilot session with its own context.
+What is the primary advantage of using a subagent's isolated environment?,It ensures that current files are not accidentally modified during code exploration or refactoring.
+How does using subagents improve the response quality from the main AI model?,"By reducing the size of the main context window, keeping it lean and focused."
+What command is used to invoke a subagent in the GitHub Copilot chat?,#run subagent
+True or False: A subagent automatically applies its code fixes directly to the project files.,False; it returns findings to the main session for the user to pass to the main agent.
+What specific information does a subagent have access to when it runs?,It only knows the specific information or code that the user sends to it.
+"In the context of agentic programming, what is the role of the main agent relative to a subagent?",The main agent receives the subagent's final response and implements the final process.
+For which tasks are subagents considered most useful?,"Refactoring code, performing reviews, or conducting research."
+How does a subagent return its work to the user?,It works in the background and returns only its final findings to the chat session.
